@@ -37,6 +37,7 @@
         <aem.port>4502</aem.port>
         <aem.publish.host>localhost</aem.publish.host>
         <aem.publish.port>4503</aem.publish.port>
+        <aem.useProxy>false</aem.useProxy>
         <sling.user>admin</sling.user>
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
@@ -282,6 +283,7 @@
                         <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
                         <failOnError>true</failOnError>
                         <failOnMissingEmbed>true</failOnMissingEmbed>
+                        <useProxy>${aem.useProxy}</useProxy>
                     </configuration>
                 </plugin>
                 <!-- Apache Felix Bundle Plugin -->
